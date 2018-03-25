@@ -1,0 +1,29 @@
+#include <stdio.h>
+#define TEMP_WRZENIA 100
+#define TEMP_ZAMARZANIA 0
+int main()
+{
+    double temp;
+    printf("Wypisz stan skupienia wody\n");
+    scanf("%lf", & temp);
+    
+    if(temp>=100)
+        printf("Woda w temperaturze %lf jest w stanie gazowym\n", temp);
+       
+    else{
+        printf(" Woda w temperaturze %lf nie jest para\n", temp);
+    }   
+      if(temp<=0){
+    printf("Woda w temperaturze %lf jest w stanie stalym\n", temp);
+    
+   } else {
+    printf("Woda w temperaturze %lf nie jest w stanie stalym\n", temp);
+
+   } if((temp>=0)&&(temp<=100)) {
+    printf(" Woda w temperaturze %lf jest w stanie cieklym\n", temp);
+    } else {
+      printf("Woda w temperatyrze %lf nie jest w stanie cieklym\n", temp);
+    }
+   
+  return 0;
+}
