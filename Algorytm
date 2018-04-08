@@ -1,0 +1,30 @@
+
+int
+main ()
+{
+  char reakcja;
+  char oddychanie;
+
+  char dostepnosc_AED;
+  printf("Czy reaguje\n");
+  scanf(" %c", & reakcja);
+  printf(" %c", reakcja);
+  printf(" Czy oddycha\n");
+  scanf(" %c", & oddychanie);
+  printf(" %c", oddychanie);
+   if ((reakcja == 't') && (oddychanie == 't')){
+      printf (" Pozycja bezpieczna\n");
+    }else if ((reakcja == 'n') && (oddychanie == 'n')){
+      printf (" Wykonuj RKO \n ");
+ printf(" Czy posiadasza_AED\n");
+     scanf(" %c", & dostepnosc_AED);
+    printf(" %c", dostepnosc_AED);
+    ( dostepnosc_AED == 'n');
+    printf(" Kontynuuj wykonywanie RKO \n");
+     ( dostepnosc_AED == 't');
+    printf(" Kozystaj z ADE, wykonuj polecenia\n");
+     }else 
+    
+
+    return 0;
+}
