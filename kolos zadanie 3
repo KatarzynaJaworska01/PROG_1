@@ -1,0 +1,22 @@
+# include <stdio.h>
+ 
+
+int main ()
+
+{float pln, eur;
+char warunek = 'y';
+    while (warunek == 'y'){
+printf ("Podaj kwoty w PLN\n");
+scanf ("%f",& pln);
+//eur = 1.2314;
+pln = (pln/ 3.3881);
+printf ("PLN do USD:%.2f\n",pln, (pln/ 3.3881));
+pln = (pln/1.2314);
+printf ("PLN do EUR:%.2f\n",pln, (pln/1.2314));
+ printf ("Czy chcesz kontynuować?\n");
+        scanf (" %c", &warunek);
+        //warunek = getchar();
+}
+
+    return 0;
+}
