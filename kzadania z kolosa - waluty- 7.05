@@ -1,0 +1,24 @@
+#include <stdio.h>
+#define USD 3.3881
+#define EUR 1.2314
+float PLNtoUSD(float inputPLN){
+    float dolar;
+    dolar=inputPLN/USD;
+    return dolar;
+    
+}
+float USDtoEUR( float inputUSD){
+    float euro;
+    euro= inputUSD/EUR;
+    return euro;
+}
+int main(){
+    float zlotowki, dolary;
+    scanf("%f",&zlotowki);
+    printf("%.2f zl to %.2f dolarow\n",zlotowki, PLNtoUSD(zlotowki));
+    dolary=PLNtoUSD(zlotowki);
+    printf("%.2f dolarow to %.2f euro\n", dolary, USDtoEUR(dolary));
+    
+
+    return 0;
+}
