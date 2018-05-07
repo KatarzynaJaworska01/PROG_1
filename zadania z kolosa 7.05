@@ -1,3 +1,5 @@
+/******************************************************************************
+
 Welcome to GDB Online.
 GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
 Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
@@ -9,23 +11,23 @@ Code, Compile, Run and Debug online from anywhere in world.
 #define FOOT 12
 float przelicznieCmToInch(float centymetry){
     float inch;
-    inch = centymetry/2.54;   // przelicznie- sami piszemy
+    inch = centymetry/INCH;   // przelicznie- sami piszemy
     return inch;
 }
-    float przelicznieCmToFoot(float inchInput){
-    float inch;
-    inch = centymetry/2.54;   // przelicznie- sami piszemy
-    return inch;
+float przelicznieInToFoot(float inchInput){
+    float foot;
+    foot = inchInput/FOOT;   // przelicznie- sami piszemy
+    return foot;
     }
 int main()
 {
- float centymetry, naCale, naStopy;
+ float centymetry, naCale, nastopy;
  // pobieranie danych- scanf()
  scanf("%f",& centymetry);      
 // naCale = centymetry/2.54;   // przelicznie- sami piszemy
- printf("%.2f tyle cm to %.2f cali\n", centymetry, przelicznieCmToInch(float centymetry));
-na stopy = przelicznieCmToInch(float centymetry);
-printf("%.2f tyle cali to %.2f stop\n", centymetry, przelicznieCmToFoot(float naStpoy)));
+ printf("%.2f tyle cm to %.2f cali\n", centymetry, przelicznieCmToInch(centymetry));
+nastopy = przelicznieCmToInch(centymetry);
+printf("%.2f tyle cali to %.2f stop\n", centymetry, przelicznieInToFoot(nastopy));
 
     return 0;
 }
