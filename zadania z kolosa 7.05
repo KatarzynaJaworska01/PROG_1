@@ -25,7 +25,7 @@ int main()
 // naCale = centymetry/2.54;   // przelicznie- sami piszemy
  printf("%.2f tyle cm to %.2f cali\n", centymetry, przelicznieCmToInch(float centymetry));
 na stopy = przelicznieCmToInch(float centymetry);
-printf("%.2f tyle cali to %.2f stop\n", centymetry, przelicznieCmToInch(float naStpoy)));
+printf("%.2f tyle cali to %.2f stop\n", centymetry, przelicznieCmToFoot(float naStpoy)));
 
     return 0;
 }
